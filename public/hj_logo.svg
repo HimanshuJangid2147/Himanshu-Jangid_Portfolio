@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg baseProfile="full" height="64px" version="1.1" viewBox="0 0 64 64" width="64px"
+    xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#0ea5e9;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+        </linearGradient>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+            <feMerge> 
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/> 
+            </feMerge>
+        </filter>
+        <filter id="shadow">
+            <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+        </filter>
+    </defs>
+    
+    <!-- Background square with curves -->
+    <rect x="4" y="4" width="56" height="56" rx="12" ry="12" fill="url(#bgGradient)" 
+          stroke="url(#textGradient)" stroke-width="1" filter="url(#shadow)" opacity="0.9"/>
+    
+    <!-- Subtle background pattern -->
+    <rect x="8" y="8" width="48" height="48" rx="8" ry="8" fill="none" 
+          stroke="url(#textGradient)" stroke-width="0.5" opacity="0.2"/>
+    
+    <!-- Main text with gradient and glow -->
+    <text dominant-baseline="middle" fill="url(#textGradient)" 
+          font-family="'SF Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', monospace" 
+          font-size="20px" font-weight="600" text-anchor="middle" x="32" y="32" 
+          filter="url(#glow)">
+        &lt;/HJ&gt;
+    </text>
+    
+    <!-- Subtle highlight border -->
+    <rect x="4" y="4" width="56" height="56" rx="12" ry="12" fill="none" 
+          stroke="url(#textGradient)" stroke-width="0.5" opacity="0.3" 
+          stroke-dasharray="3,2"/>
+</svg>
