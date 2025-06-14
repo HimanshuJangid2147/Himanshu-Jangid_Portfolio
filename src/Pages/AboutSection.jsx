@@ -342,7 +342,7 @@ const AboutSection = () => {
                                                     animate={{ scale: contentIsVisible ? 1 : 0 }}
                                                     transition={{ delay: 0.8, type: "spring", stiffness: 200 }}
                                                 >
-                                                    2+
+                                                    1+
                                                 </motion.div>
                                                 <div className="text-xs text-slate-400">Years Experience</div>
                                             </div>
@@ -353,7 +353,7 @@ const AboutSection = () => {
                                                     animate={{ scale: contentIsVisible ? 1 : 0 }}
                                                     transition={{ delay: 0.9, type: "spring", stiffness: 200 }}
                                                 >
-                                                    15+
+                                                    3+
                                                 </motion.div>
                                                 <div className="text-xs text-slate-400">Projects</div>
                                             </div>
@@ -366,7 +366,7 @@ const AboutSection = () => {
                                                 >
                                                     100%
                                                 </motion.div>
-                                                <div className="text-xs text-slate-400">Satisfaction</div>
+                                                <div className="text-xs text-slate-400">Completion</div>
                                             </div>
                                         </motion.div>
                                     </motion.div>

@@ -27,4 +27,4 @@ const GlobalBackground = ({ children }) => {
     );
 };
 
-export default GlobalBackground;
+export default React.memo(GlobalBackground);

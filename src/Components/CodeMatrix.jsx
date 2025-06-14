@@ -15,6 +15,7 @@ const CodeMatrix = () => {
         if (!canvas) return; // Exit if the canvas is not ready
 
         const ctx = canvas.getContext('2d');
+        let animationFrameId;
 
         // Function to handle resizing of the canvas to fit the window
         const resizeCanvas = () => {
@@ -58,14 +59,16 @@ const CodeMatrix = () => {
                 // Move the character down for the next frame
                 drops[i]++;
             }
+            // Request the next frame
+            animationFrameId = window.requestAnimationFrame(draw);
         };
 
-        // Set up an interval to call the draw function repeatedly, creating the animation
-        const animationInterval = setInterval(draw, 100);
+        // Start the animation
+        draw();
 
         // Cleanup function: This is crucial to prevent memory leaks when the component unmounts
         return () => {
-            clearInterval(animationInterval);
+            window.cancelAnimationFrame(animationFrameId);
             window.removeEventListener('resize', resizeCanvas);
         };
     }, []); // The empty dependency array [] ensures this effect runs only once when the component mounts
