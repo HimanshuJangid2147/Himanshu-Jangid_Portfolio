@@ -54,6 +54,21 @@ const ProjectsSection = () => {
             },
             features: ['Real-Time Messaging', 'Image & Text Support', 'JWT Authentication', 'Fully Responsive UI'],
             color: 'from-green-500 to-emerald-500'
+        },
+        {
+            id: 4,
+            title: 'Brandrake - A Business Portfolio Website',
+            description: 'A premium portfolio website for a global branding studio, featuring a secure admin panel for dynamic content management and showcasing their design projects.',
+            category: 'laravel',
+            image: 'https://placehold.co/600x400/1e293b/3b82f6?text=Brandrake',
+            technologies: ['Laravel', 'PHP', 'MySQL', 'Bootstrap'],
+            year: '2023',
+            links: {
+                live: 'https://brandrake.com',
+                github: null
+            },
+            features: ['Secure Admin Panel', 'Image Uploads', 'Responsive UI', 'Client Satisfaction'],
+            color: 'from-blue-500 to-emerald-500'
         }
     ];
 
