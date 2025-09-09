@@ -461,9 +461,9 @@ const SkillsSection = () => {
                                                             delay: 0.2
                                                         }}
                                                     >
-                                                        15+
+                                                        4+
                                                     </motion.div>
-                                                    <div className="text-sm text-slate-400">Practice Projects</div>
+                                                    <div className="text-sm text-slate-400">Projects</div>
                                                 </motion.div>
 
                                                 <motion.div
