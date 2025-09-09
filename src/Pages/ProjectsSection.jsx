@@ -62,7 +62,7 @@ const ProjectsSection = () => {
             category: 'laravel',
             image: 'https://placehold.co/600x400/1e293b/3b82f6?text=Brandrake',
             technologies: ['Laravel', 'PHP', 'MySQL', 'Bootstrap'],
-            year: '2023',
+            year: '2025',
             links: {
                 live: 'https://brandrake.com',
                 github: null
